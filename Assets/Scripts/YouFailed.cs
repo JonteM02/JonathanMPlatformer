@@ -10,7 +10,9 @@ public class YouFailed : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            //Skriv ut i konsollen att du har Failat.
             print("You Failed");
+            //Ladda aktiva scenen dvs om du är på level 2 så laddar den level 2 istället för level 1.
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             SceneManager.LoadScene(levelToLoad);
         }

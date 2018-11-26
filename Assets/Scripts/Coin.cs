@@ -16,20 +16,22 @@ public class Coin : MonoBehaviour
             if (controller != null)
             {
                 //skapa en temporär variabel "tracker" och sätt den till
-                //resultate tav sökningen efter komponenten "ScoreTracker".
+                //resultatet av sökningen efter komponenten "ScoreTracker".
                 ScoreTracker tracker = controller.GetComponent<ScoreTracker>();
                 if (tracker != null)
                 {
+                    //Håller koll på vilket score playern har. 
                     tracker.totalScore += score;
                 }
                 else
                 {
+                    //Varnar i loggen om ScoreTracker inte finns på GameController.
                     Debug.LogError("ScoreTracker saknas på GameController");
                 }
             }
             else
             {
-                Debug.LogError("GameController finns inte");    
+                Debug.LogError("GameController finns inte");
             }
             Destroy(gameObject);
         }

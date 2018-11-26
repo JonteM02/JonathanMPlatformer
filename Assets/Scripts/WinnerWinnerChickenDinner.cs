@@ -9,6 +9,7 @@ public class WinnerWinnerChickenDinner : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            //Skriver ut winner winner chicken dinner i konsolen samt laddar scenen.
             print("Winner Winner Chicken Dinner");
             SceneManager.LoadScene(levelToLoad);
         }
