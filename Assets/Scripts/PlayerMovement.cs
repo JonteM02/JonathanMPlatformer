@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
 
+            //Kollar om groundCheck nuddar något
             if (groundCheck.Touches > 0)
             {
                 rbody.velocity = new Vector2(rbody.velocity.x, jumpHeight);
