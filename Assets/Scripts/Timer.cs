@@ -12,7 +12,6 @@ public class Timer : MonoBehaviour
     {
         StartTime = Time.time;
     }
-
     // Update is called once per frame
     void Update()
     {

@@ -11,6 +11,7 @@ public class ScoreTracker : MonoBehaviour
 
     void Update()
     {
+        //Visar totala scoret
         scoreText.text = string.Format("Score; {0}", totalScore);
     }
 }

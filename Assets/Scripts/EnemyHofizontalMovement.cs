@@ -12,7 +12,7 @@ public class EnemyHofizontalMovement : MonoBehaviour
     {
         //Hämtar componenten Rigidbody2D när man startar spelet.
         rbody = GetComponent<Rigidbody2D>();
-        //Stänger av Move.
+        //Kör movefunktionen och bestämmer vad flip ska vara
         Move(false);
     }
 

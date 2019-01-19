@@ -30,6 +30,7 @@ public class Coin : MonoBehaviour
             }
             else
             {
+                //Varnar för att GameControllern inte finns
                 Debug.LogError("GameController finns inte");
             }
             Destroy(gameObject);
