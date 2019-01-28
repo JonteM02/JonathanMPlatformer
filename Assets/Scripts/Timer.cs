@@ -23,5 +23,4 @@ public class Timer : MonoBehaviour
         //Visar hur många sekunder som gått.
         TimerText.text = minutes + ":" + seconds;
     }
-
 }
